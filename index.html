@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ディーラカ｜ウェブデザイン・ブランディング</title>
+  <meta name="description" content="ウェブデザインとブランディングのディーラカ。あなたの歩みを、選ばれる理由に。5年以上の経験で、物語が伝わり、ブランドが育つウェブサイトをつくります。まずはお電話・LINE・フォームからご相談ください。">
+  <meta name="theme-color" content="#0C0517">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ディーラカ">
+  <meta property="og:title" content="物語が、ブランドになる。｜ディーラカ">
+  <meta property="og:description" content="ウェブデザインとブランディングのディーラカ。あなたの歩みを、選ばれる理由に。">
+  <meta property="og:url" content="https://kdeelaka.github.io/">
+  <meta property="og:image" content="https://kdeelaka.github.io/assets/og-image.jpg">
+  <link rel="canonical" href="https://kdeelaka.github.io/">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preload" href="assets/fonts/mincho-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ディーラカ",
+    "alternateName": "Deelaka",
+    "founder": { "@type": "Person", "name": "Kusal Deelaka" },
+    "description": "ウェブデザインとブランディング",
+    "telephone": "+81-70-6693-1812",
+    "knowsLanguage": "ja"
+  }
+  </script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js" integrity="sha384-3vCAhD+a3BOliP3QqjQINn6ZWiZxoqu0WFxX5ZQZgqekDZuSb1mJBrrLMmu94H8f" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js" integrity="sha384-H2WL1iy/jKQQ7MTHU2hskZKNHTYWWD/KgKE1vCNnaWY8An2ESTh23KN/fTp8XS3j" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js" integrity="sha384-R18XzqnxvVLEF+BYfhpmDx30v7eP83fAckyfoRzK7/Uf6nGqufcmsk0eAKo7S3RU" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip" href="#mission">本文へ移動</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__curtain loader__curtain--top"></div>
+    <div class="loader__curtain loader__curtain--bottom"></div>
+    <p class="loader__mark" id="loader-mark">ディーラカ</p>
+    <span class="loader__line" id="loader-line"><i id="loader-bar"></i></span>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top">ディーラカ</a>
+    <nav class="nav__links" aria-label="ページ内">
+      <a href="#mission">想い</a>
+      <a href="#services">できること</a>
+      <a href="#works">制作実績</a>
+    </nav>
+    <a class="btn btn--nav" href="#contact">相談する</a>
+  </header>
+
+  <!-- The film. The title sits under the canvas, so he stands in front of it. -->
+  <div class="cinema" id="cinema">
+    <div class="titlecard" id="titlecard">
+      <h1 class="titlecard__title">
+        <span class="titlecard__col titlecard__col--first" id="title-first">物語が、</span>
+        <span class="titlecard__col titlecard__col--second" id="title-second">ブランドになる。</span>
+      </h1>
+    </div>
+    <canvas class="film" id="film" aria-hidden="true"></canvas>
+    <div class="cinema__dim" id="cinema-dim"></div>
+  </div>
+
+  <main id="top">
+    <!-- 1. Hero: Scene 1 -->
+    <section class="reel reel--orbit" data-reel="orbit" aria-label="ごあいさつ">
+      <div class="reel__stage">
+        <p class="act">第一幕　光の軌道</p>
+        <div class="intro" id="intro" data-in="-1" data-out=".17">
+          <p class="intro__lead">あなたの歩みを、選ばれる理由に。<br>ウェブデザインとブランディングのディーラカです。</p>
+          <div class="actions">
+            <a class="btn" href="#contact">まずは相談する</a>
+            <a class="tel" data-tel href="#"></a>
+          </div>
+        </div>
+        <p class="caption" data-in=".2" data-out=".44"><span class="ph">どの仕事にも、</span><br><span class="ph">まだ語られていない</span><span class="ph">物語があります。</span></p>
+        <p class="caption" data-in=".46" data-out=".69"><span class="ph">その物語を、</span><span class="ph">形と色と言葉にするのが</span><br><span class="ph">私の仕事です。</span></p>
+        <p class="caption" data-in=".71" data-out=".95"><span class="ph">見た人の記憶に残り、</span><br><span class="ph">選ばれるウェブサイトへ。</span></p>
+      </div>
+    </section>
+
+    <div class="sheet sheet--first">
+      <!-- 2. Animated stats strip -->
+      <section class="stats" aria-label="数字で見るディーラカ">
+        <dl class="stats__row">
+          <div class="stat">
+            <dt class="stat__value"><span data-count="5">5</span><span class="stat__unit">+ 年</span></dt>
+            <dd class="stat__label">ウェブサイトの仕事を<br>続けてきた年数</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__value"><span data-count="100">100</span></dt>
+            <dd class="stat__label">なんでも110番の<br>SEOスコア</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__value"><span data-count="100">100</span></dt>
+            <dd class="stat__label">なんでも110番の<br>アクセシビリティ</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__value"><span data-count="1">1</span><span class="stat__unit">窓口</span></dt>
+            <dd class="stat__label">ご相談から公開まで<br>同じ担当者が対応</dd>
+          </div>
+        </dl>
+        <p class="stats__note">スコアは Lighthouse による計測（2026年11月、100点満点）。アクセシビリティはパソコン表示の値です。</p>
+      </section>
+
+      <!-- 3. Mission -->
+      <section class="mission" id="mission" aria-labelledby="mission-title">
+        <div class="mission__stage">
+          <h2 class="mission__text" id="mission-title"><span class="ph">ひとりでも</span><span class="ph">多くの人を、</span><br><span class="ph">その人らしい</span><span class="ph">プロの姿で、</span><br><span class="ph">ウェブの世界へ。</span></h2>
+          <p class="mission__note" id="mission-note">いい仕事をしているのに、ウェブではその魅力が伝わっていない。そんなお店や会社を、ひとつでも減らしたい。それが、私がこの仕事を続ける理由です。</p>
+        </div>
+      </section>
+
+      <!-- 4. Three pillars -->
+      <section class="pillars" id="pillars" aria-labelledby="pillars-title">
+        <div class="pillars__stage">
+          <div class="pillars__track" id="pillars-track">
+            <div class="pillars__intro">
+              <h2 class="vertical-title" id="pillars-title" data-rise><span class="ph">大切にしている、</span><br><span class="ph">みっつのこと。</span></h2>
+            </div>
+            <article class="pillar">
+              <p class="pillar__kanji" aria-hidden="true"><span class="pillar__line">語</span><span class="pillar__window"><span class="pillar__fill">語</span></span></p>
+              <div class="pillar__body">
+                <h3 class="pillar__title"><span class="ph">歩みを、</span><span class="ph">語る。</span></h3>
+                <p>まずはお話を聞かせてください。何を大切にしてきたのか、誰に届けたいのか。お客様の言葉から、伝えるべき物語を見つけます。</p>
+              </div>
+            </article>
+            <article class="pillar">
+              <p class="pillar__kanji" aria-hidden="true"><span class="pillar__line">形</span><span class="pillar__window"><span class="pillar__fill">形</span></span></p>
+              <div class="pillar__body">
+                <h3 class="pillar__title"><span class="ph">想いを、</span><span class="ph">形に。</span></h3>
+                <p>色、書体、写真、余白。ブランドの世界観をひとつに整え、ひと目で信頼されるデザインに仕上げます。</p>
+              </div>
+            </article>
+            <article class="pillar">
+              <p class="pillar__kanji" aria-hidden="true"><span class="pillar__line">育</span><span class="pillar__window"><span class="pillar__fill">育</span></span></p>
+              <div class="pillar__body">
+                <h3 class="pillar__title"><span class="ph">ブランドを、</span><span class="ph">育てる。</span></h3>
+                <p>見つかる。伝わる。すぐ連絡できる。公開したその日から、お客様の商売を後押しするサイトをつくります。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Story -->
+      <section class="story" id="story" aria-labelledby="story-title">
+        <div class="sheet__inner">
+          <div class="story__grid">
+            <h2 class="vertical-title" id="story-title" data-rise><span class="ph">ディーラカと、</span><br><span class="ph">呼んでください。</span></h2>
+            <div class="story__body">
+              <p>本名は Kusal Deelaka。覚えやすいように、ディーラカと名乗っています。</p>
+              <p>ウェブサイトの仕事を始めて、5年以上。たくさんのサイトをつくり、公開後に売上が伸びたと喜んでいただくたびに、確信してきたことがあります。</p>
+            </div>
+          </div>
+          <p class="story__pull" data-rise><span class="ph">人の心を動かすのは、</span><br><span class="ph">機能の数ではありません。</span><br><span class="ph">その仕事に込められた</span><span class="ph">物語です。</span></p>
+          <p class="story__end">いまは日本で、お客様の物語をウェブのかたちにしています。</p>
+        </div>
+        <div class="marquee" id="marquee" aria-hidden="true">
+          <div class="marquee__row" id="marquee-row">
+            <span>ウェブデザイン</span><i></i><span>ブランディング</span><i></i>
+            <span>ウェブデザイン</span><i></i><span>ブランディング</span><i></i>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 6. Service: Scene 2 -->
+    <section class="reel reel--builder" data-reel="builder" id="services" aria-labelledby="services-title">
+      <div class="reel__stage">
+        <p class="act">第二幕　つくる人</p>
+        <h2 class="reel-title" id="services-title" data-in=".02" data-out=".3"><span class="ph">できることは、</span><span class="ph">ふたつ。</span></h2>
+
+        <article class="offer offer--left" data-in=".32" data-out=".63">
+          <h3 class="offer__name">ウェブデザイン</h3>
+          <p class="offer__lead">初めて見た人が、迷わず信頼できるサイトへ。</p>
+          <ul class="offer__list">
+            <li>構成の設計</li>
+            <li>デザイン</li>
+            <li>サイト制作</li>
+            <li>スマートフォン対応</li>
+            <li>検索対策の基本</li>
+            <li>電話・LINE・フォームへの導線</li>
+          </ul>
+        </article>
+
+        <article class="offer offer--right" data-in=".65" data-out=".97">
+          <h3 class="offer__name">ブランディング</h3>
+          <p class="offer__lead">名前、色、言葉を、ひとつの世界観に。</p>
+          <ul class="offer__list">
+            <li>ロゴ</li>
+            <li>ブランドカラー</li>
+            <li>書体の選定</li>
+            <li>キャッチコピー</li>
+            <li>SNS・名刺への展開</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7. Featured work -->
+    <section class="sheet sheet--works" id="works" aria-labelledby="works-title">
+      <div class="sheet__inner sheet__inner--wide">
+        <div class="works-head">
+          <h2 class="heading" id="works-title" data-rise><span class="ph">つくったものを、</span><span class="ph">手にとってください。</span></h2>
+          <p class="works-head__hint">サムネイルは自由に動かせます。開くと、その場でサイトの中を見られます。</p>
+        </div>
+
+        <div class="browser" id="browser">
+          <div class="browser__tabs">
+            <span class="browser__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <div class="tabs" id="tabs">
+              <button class="tab is-active" type="button" id="tab-home">制作実績</button>
+            </div>
+          </div>
+          <div class="browser__toolbar">
+            <button class="tool" type="button" id="back" aria-label="制作実績に戻る" disabled>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="address">
+              <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              <span id="address">ディーラカの制作実績</span>
+            </div>
+            <button class="tool tool--text" type="button" id="tidy">整列する</button>
+          </div>
+
+          <div class="stage" id="stage">
+            <div class="stage__ruler stage__ruler--top" aria-hidden="true"></div>
+            <div class="stage__ruler stage__ruler--left" aria-hidden="true"></div>
+            <div class="stage__guide stage__guide--x" id="guide-x" aria-hidden="true"></div>
+            <div class="stage__guide stage__guide--y" id="guide-y" aria-hidden="true"></div>
+            <div class="stage__thumbs" id="thumbs"></div>
+          </div>
+
+          <div class="browser__status">
+            <span id="status">ドラッグで移動、クリックで開く</span>
+            <span class="browser__coords" id="coords" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="flow">
+          <h3 class="subheading">ご依頼の流れ</h3>
+          <ol class="steps">
+            <li class="steps__item">
+              <h4>ご相談</h4>
+              <p>お電話・LINE・フォームで、今の状況を聞かせてください。</p>
+            </li>
+            <li class="steps__item">
+              <h4>ヒアリング</h4>
+              <p>お客様の歩みや強みを伺い、内容に合わせてお見積りします。</p>
+            </li>
+            <li class="steps__item">
+              <h4>デザイン・制作</h4>
+              <p>途中で確認していただきながら、形にしていきます。</p>
+            </li>
+            <li class="steps__item">
+              <h4>公開</h4>
+              <p>お客様の物語を、世の中に届けます。</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Scene 3 -->
+    <section class="reel reel--gallery" data-reel="gallery" aria-label="ごあいさつの続き">
+      <div class="reel__stage">
+        <p class="act">第三幕　ようこそ</p>
+        <p class="caption" data-in=".14" data-out=".46"><span class="ph">ここまで見てくださり、</span><br><span class="ph">ありがとうございます。</span></p>
+        <div class="closing" data-in=".6" data-out="2">
+          <p class="closing__line"><span class="ph">次の物語は、</span><span class="ph">あなたのものです。</span></p>
+          <a class="btn" href="#contact">まずは相談する</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Final CTA and 10. Footer -->
+    <section class="sheet sheet--contact" id="contact" aria-labelledby="contact-title">
+      <div class="sheet__inner">
+        <div class="contact">
+          <h2 class="vertical-title" id="contact-title" data-rise><span class="ph">あなたの物語を、</span><br><span class="ph">聞かせてください。</span></h2>
+          <div class="contact__ways">
+            <p>まだ何も決まっていなくても大丈夫です。お電話・LINE・フォームで、気軽にご連絡ください。</p>
+            <a class="tel tel--large" data-tel href="#"></a>
+            <a class="btn btn--line" id="line-link" href="#" target="_blank" rel="noopener" hidden>LINEで相談する</a>
+          </div>
+
+          <form class="form" id="contact-form" method="post" novalidate>
+            <div class="field">
+              <label for="f-name">お名前</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__error" id="f-name-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="f-company">会社名・屋号 <span class="field__optional">任意</span></label>
+              <input id="f-company" name="company" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="f-reach">電話番号またはメールアドレス</label>
+              <input id="f-reach" name="reach" type="text" autocomplete="email" required>
+              <p class="field__error" id="f-reach-error" hidden></p>
+            </div>
+            <fieldset class="field field--choices">
+              <legend>ご相談の内容</legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="topic" value="ウェブサイト制作" checked><span>ウェブサイト制作</span></label>
+                <label class="choice"><input type="radio" name="topic" value="ブランディング"><span>ブランディング</span></label>
+                <label class="choice"><input type="radio" name="topic" value="両方"><span>両方</span></label>
+                <label class="choice"><input type="radio" name="topic" value="まだ決まっていない"><span>まだ決まっていない</span></label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="f-message">メッセージ</label>
+              <textarea id="f-message" name="message" rows="5" required data-lenis-prevent></textarea>
+              <p class="field__error" id="f-message-error" hidden></p>
+            </div>
+            <div class="field field--trap" aria-hidden="true">
+              <label for="f-website">この欄は空のままにしてください</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <p class="form__note">いただいた情報は、ご相談への返信のためだけに使います。</p>
+            <button class="btn btn--submit" type="submit">相談を送る</button>
+            <div class="form__status" id="form-status" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer" id="footer">
+        <div class="footer__inner">
+          <p>ウェブデザイン・ブランディング</p>
+          <nav class="footer__links" aria-label="フッター">
+            <a href="#mission">想い</a>
+            <a href="#services">できること</a>
+            <a href="#works">制作実績</a>
+            <a href="#contact">ご相談</a>
+          </nav>
+          <a class="tel" data-tel href="#"></a>
+          <p class="footer__copy">&copy; 2026 Kusal Deelaka</p>
+        </div>
+        <p class="wordmark" id="wordmark" aria-hidden="true"><span class="ph">ディーラカ</span></p>
+      </footer>
+    </section>
+  </main>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursor-label"></span></div>
+
+  <noscript>
+    <p class="noscript">このページの映像と制作実績の表示には JavaScript が必要です。お電話は 070-6693-1812 まで。</p>
+    <style>.loader { display: none; }</style>
+  </noscript>
+</body>
+</html>
