@@ -24,7 +24,7 @@
 
     // Your SSGform URL, such as 'https://ssgform.com/s/AbcDeFgHiJkL'. Until this is
     // set, the form says so plainly and offers phone and SMS instead.
-    formEndpoint: '',
+    formEndpoint: 'https://ssgform.com/s/T8Xm3jSZbqxW',
 
     // Scene clips, made in Google Flow. A scene with media set plays it in place of the 3D stand-in.
     // Phones use the sequence when there is one, because iOS seeks video slowly.
