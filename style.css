@@ -266,12 +266,21 @@ button, input, textarea { font: inherit; color: inherit; letter-spacing: inherit
 .nav.is-hidden { transform: translate(-50%, calc(-100% - 22px)); }
 
 .nav__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
   font-family: var(--font-film);
   font-weight: 800;
   font-size: 1.25rem;
   letter-spacing: 0.08em;
   line-height: 1;
   text-decoration: none;
+}
+
+.nav__mark {
+  width: 1.3em;
+  height: 1.3em;
+  flex: none;
 }
 
 .nav__links {
