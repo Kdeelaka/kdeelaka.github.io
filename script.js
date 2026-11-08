@@ -51,6 +51,16 @@
         ['規模', '全10ページ'],
       ],
     },
+    ryokan: {
+      name: '湯宿 しじま',
+      summary: '架空の温泉宿のために作ったコンセプト作品です。スクロールすると障子がひらき、庭から露天風呂までを3Dで歩けます。春夏秋冬を切り替えると、光や木々、客室の写真、献立まで季節に合わせて変わります。',
+      facts: [
+        ['業種', '温泉旅館（架空）'],
+        ['種別', 'コンセプト作品'],
+        ['担当', 'デザイン・3D表現・制作'],
+        ['技術', 'WebGL2によるリアルタイム3D'],
+      ],
+    },
   };
 
   // `home` is where a thumbnail rests, as a share of the free space across and down.
@@ -58,27 +68,32 @@
     {
       site: 'nandemo', slug: 'nandemo-top', kind: 'pc', pc: 2, sp: 3,
       label: 'なんでも110番 トップページ', page: 'トップページ', path: 'nandemo110.com',
-      home: { wide: [0.05, 0.1], narrow: [0, 0.02] }, tilt: -2,
+      home: { wide: [0.03, 0.06], narrow: [0, 0.0] }, tilt: -2,
     },
     {
       site: 'nandemo', slug: 'nandemo-top', kind: 'sp', pc: 2, sp: 3,
       label: 'スマートフォン', page: 'トップページ（スマートフォン）', path: 'nandemo110.com',
-      home: { wide: [0.45, 0.16], narrow: [0.04, 0.5] }, tilt: 3,
+      home: { wide: [0.97, 0.1], narrow: [0.04, 0.4] }, tilt: 3,
     },
     {
       site: 'nandemo', slug: 'nandemo-gaiju', kind: 'pc', pc: 2, sp: 4,
       label: 'なんでも110番 害獣駆除', page: '害獣駆除ページ', path: 'nandemo110.com/gaiju/',
-      home: { wide: [0.95, 0.06], narrow: [1, 0.28] }, tilt: 2,
+      home: { wide: [0.5, 0.04], narrow: [1, 0.18] }, tilt: 2,
     },
     {
       site: 'nandemo', slug: 'nandemo-kuruma', kind: 'pc', pc: 1, sp: 2,
       label: 'なんでも110番 車のサービス', page: '車のサービスページ', path: 'nandemo110.com/kuruma/',
-      home: { wide: [0.72, 0.92], narrow: [1, 0.66] }, tilt: -3,
+      home: { wide: [0.86, 0.96], narrow: [1, 0.52] }, tilt: -3,
+    },
+    {
+      site: 'ryokan', slug: 'ryokan', kind: 'pc', pc: 2, sp: 3,
+      label: '湯宿 しじま（コンセプト作品）', page: 'トップページ', path: 'kdeelaka.github.io/works/ryokan/',
+      home: { wide: [0.45, 0.98], narrow: [1, 0.8] }, tilt: -1.5,
     },
     {
       slot: true, kind: 'pc',
       label: 'ご相談はこちら', title: '次は、あなたのサイト。',
-      home: { wide: [0.14, 0.94], narrow: [0.02, 1] }, tilt: 1.5,
+      home: { wide: [0.04, 0.94], narrow: [0.02, 1] }, tilt: 1.5,
     },
   ];
 
